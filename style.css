@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: clamp(0.4rem, 0.8rem, 1.2rem);
 }
 
 div {
@@ -8,19 +8,64 @@ div {
 }
 
 .left {
-    width: 35vw;
+    width: 600px;
     height: 100vh;
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
 
     display: grid;
     grid-template-columns: repeat(auto-fit, 2%);
-    grid-template-rows: 1.3fr 1fr 1.2fr 0.9fr;
+    grid-template-rows: 1.3fr 1.1fr 1.2fr 0.9fr;
 }
 
 .left > div{
-    background-color: azure;
+    background-color: rgb(185, 199, 199);
     border: 2px solid black;
     margin: 5px;
+
+    display: flex;
+}
+
+.left > div > p {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+    width: min-content;
+    height: min-content;
+    padding: 20px;
+}
+
+.p1 {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+}
+
+.p2 {
+    position: absolute;
+    top: 90px;
+    left: 40px;
+
+    font-size: 0.6rem;
+}
+
+.p3 {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    rotate: -30deg;
+
+    font-size: 1.9rem;
+}
+
+.p4 {
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    rotate: -10deg;
+
+    font-size: 2rem;
 }
 
 .img-1 {
@@ -32,11 +77,11 @@ div {
 }
 
 .img-5 {
-    grid-column: span 30;
+    grid-column: span 28;
 }
 
 .img-6 {
-    grid-column: span 21;
+    grid-column: span 23;
 }
 
 .img-7 {
@@ -44,9 +89,9 @@ div {
 }
 
 .img-8 {
-    grid-column: span 13;
+    grid-column: span 11;
 }
 
 .img-9 {
-    grid-column: span 22;
+    grid-column: span 24;
 }
