@@ -1,0 +1,1 @@
+Jag såg i sista sekund att jag råkat göra grid-column för en del saker för stora så att grid får en större fraktion i slutet. Det var ju typiskt.
